@@ -6,4 +6,4 @@ def home():
     return template('index')
  
 
-run(debug = True, reloader = True)
+run(debug = False, host='0.0.0.0', port=8080)
