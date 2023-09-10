@@ -1,4 +1,4 @@
-#!/home/donesrom/Kinsta1/source/bin/python3
+#!/home/donesrom/Kinsta1/source/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
