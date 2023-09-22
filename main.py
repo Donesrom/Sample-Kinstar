@@ -6,4 +6,10 @@ def home():
     return template('index')
  
 
-run(debug = False, host='0.0.0.0', port=8080)
+run()
+
+
+port = int(os.getenv('PORT', 80))
+print('Listening on port %s' % (port))
+httpd = socketserver.TCPServer(('', port), Handler)
+httpd.serve_forever()
